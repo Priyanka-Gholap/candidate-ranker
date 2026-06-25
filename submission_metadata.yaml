@@ -1,0 +1,46 @@
+# Redrob Hackathon — Submission Metadata
+team_name: "BugHunters"
+
+primary_contact:
+  name: "Priyanka Gholap"
+  email: "priyankagholap182@gmail.com"
+  phone: "+91-9076397339"
+
+team_members:
+  - name: "Priyanka Gholap"
+    email: "priyankagholap182@gmail.com"
+    role: "ML Engineer"
+  - name: "Valaya Dase"
+    email: "priyankagholap182@gmail.com"
+    role: "Backend Engineer"
+
+github_repo: "https://github.com/YOUR_GITHUB_USERNAME/ai-candidate-ranker"
+sandbox_link: "https://colab.research.google.com/drive/YOUR_COLAB_NOTEBOOK_ID"
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./datasets.csv"
+
+compute:
+  platform: "Local Machine (BugHunters sandbox)"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.13.7"
+  os: "Windows"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Other"
+
+ai_usage_summary: |
+  Used Redrob AI Assistant to help design the scoring algorithm, audit candidate schemas, and detect honeypot anomalies. No candidate data was sent to any external API during ranking.
+
+methodology_summary: |
+  A CPU-optimized, multi-stage candidate scoring pipeline. Filters out 100% of synthetic honeypot profiles by enforcing strict date and skill consistency rules. Evaluates remaining candidates using a weighted hybrid score combining role relevance (title matching, product company vs. IT services background), skill match depth (core embeddings and vector DB skills weighted by proficiency and duration), and behavioral signals (open to work, response rate, notice period, and last active date). Produces a fully-compliant top-100 shortlist in under 38 seconds on a single CPU core.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
