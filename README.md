@@ -8,15 +8,15 @@ The engine is designed to rank a dataset of candidate profiles to identify the t
 
 The system evaluates candidates through a multi-stage scoring pipeline:
 
-1. Honeypot Filtering: Identifies and excludes profiles with illogical timelines, inconsistent job durations, or invalid skill proficiencies.
-2. Location Criteria: Evaluates candidate locations, prioritizing candidates in Tier-1 cities or open to relocation.
-3. Multi-Criteria Scoring:
-   * Role Relevance (35%): Evaluates professional titles and prioritizes hands-on experience in product environments over consulting/IT services.
-   * Skill Depth (30%): Matches core machine learning and search skills, factoring in duration and proficiency.
-   * Experience Alignment (20%): Focuses on the target range of 5–9 years.
-   * Engagement Signals (15%): Incorporates responsiveness, notice periods, and recent activity.
-4. Deterministic Sorting: Ranks candidates based on score, with alphabetical candidate ID tie-breaking.
-5. Reasoning Generation: Generates brief factual explanations for the final output.
+1. **Honeypot Filtering**: Identifies and excludes profiles with illogical timelines, inconsistent job durations, or invalid skill proficiencies.
+2. **Location Criteria**: Evaluates candidate locations, prioritizing candidates in Tier-1 cities or open to relocation.
+3. **Multi-Criteria Scoring**:
+   * **Role Relevance (35%)**: Evaluates professional titles and prioritizes hands-on experience in product environments over consulting/IT services.
+   * **Skill Depth (30%)**: Matches core machine learning and search skills, factoring in duration and proficiency.
+   * **Experience Alignment (20%)**: Focuses on the target range of 5–9 years.
+   * **Engagement Signals (15%)**: Incorporates responsiveness, notice periods, and recent activity.
+4. **Deterministic Sorting**: Ranks candidates based on score, with alphabetical candidate ID tie-breaking.
+5. **Reasoning Generation**: Generates brief factual explanations for the final output.
 
 ## Reproducing the Shortlist
 

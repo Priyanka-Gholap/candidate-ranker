@@ -14,8 +14,8 @@ team_members:
     email: "priyankagholap182@gmail.com"
     role: "Backend Engineer"
 
-github_repo: "https://github.com/YOUR_GITHUB_USERNAME/ai-candidate-ranker"
-sandbox_link: "https://colab.research.google.com/drive/YOUR_COLAB_NOTEBOOK_ID"
+github_repo: "https://github.com/Priyanka-Gholap/candidate-ranker"
+sandbox_link: "https://colab.research.google.com/drive/1_ekRAw0J--PZL4vAZt6GF0B79FdR1d-H?usp=sharing"
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./datasets.csv"
 
 compute:
